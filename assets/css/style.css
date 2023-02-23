@@ -1,0 +1,141 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Styling / Position for content to be center of page */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61, 65, 68);
+}
+
+/* Styles for countdown timer */
+
+#timer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Style for main container  */
+.main-container {
+  width: 800px;
+  max-width: 70%;
+  background-color: rgb(141, 173, 229);
+  border: 3px solid rgb(3, 3, 10);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Layout for answer buttons */
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 50px 0;
+}
+
+/* Font styling for question */
+
+#question {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* Styles for answer buttons */
+.btn {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(32, 24, 172);
+  color: white;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+/* Start button styles */
+.start-btn {
+  height: 75px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgb(32, 24, 172);
+  color: white;
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Effects for buttons :) */
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.highscore {
+  text-align: center;
+}
+
+.highscore p {
+  font-size: 16px;
+}
+
+/* Input styles for user initials */
+
+#initials {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: none;
+  height: 40px;
+  width: auto;
+  text-align: center;
+  border: black solid 2px;
+  color: black;
+}
+
+#submit {
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(32, 24, 172);
+  border-radius: 5px;
+  color: white;
+}
+
+.initials-pg {
+  color: white;
+}
+
+.txt-score {
+  color: white;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  border: black solid 5px;
+  background-color: rgb(141, 173, 229);
+  border-radius: 20px;
+}
+
+body.correct {
+  background-color: green;
+}

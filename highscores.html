@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/highscore.css" />
+    <title>Highscores</title>
+  </head>
+  <body>
+    <div></div>
+    <div id="container">
+      <h2>Leaderboard</h2>
+    </div>
+
+    <!--Saves scores / initials to local storage as well as displays them on leader board page-->
+    <script>
+      var allScores = JSON.parse(localStorage.getItem("scores"));
+
+      for (var i = 0; i < allScores.length; i++) {
+        var newScore = document.createElement("h3");
+        newScore.innerHTML = allScores[i];
+
+        document.getElementById("container").appendChild(newScore);
+      }
+    </script>
+  </body>
+</html>
